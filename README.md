@@ -12,10 +12,11 @@ A complete backend REST API for managing school operations such as students, tea
 - Secure RESTful API
 
 ## 🛠️ Tech Stack
-- Laravel 10+
+- Laravel 12+
 - MySQL
 - Laravel Sanctum
 - Spatie Roles & Permissions
+- laravel api
 
 ## ⚙️ Installation
 ```bash
