@@ -1,0 +1,49 @@
+ body {
+            background: url('https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg')
+                no-repeat center center fixed;
+            background-size: cover;
+            backdrop-filter: blur(4px);
+        }
+
+        .sidebar {
+            width: 260px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background: rgba(0,0,0,0.75);
+            color: white;
+            padding: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 10px 12px;
+            color: #f1f1f1;
+            margin-bottom: 6px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background: #0d6efd;
+        }
+
+        .content {
+            margin-left: 280px;
+            padding: 25px;
+        }
+
+        .navbar-custom {
+            background: rgba(255,255,255,0.85);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+        }
+
+        .card-custom {
+            background: rgba(255,255,255,0.85);
+            border-radius: 12px;
+            padding: 20px;
+        }
+    
