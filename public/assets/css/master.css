@@ -1,49 +1,136 @@
- body {
-            background: url('https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg')
-                no-repeat center center fixed;
-            background-size: cover;
-            backdrop-filter: blur(4px);
+ /* ----------- GLOBAL ----------- */
+        body {
+            background: #f5f7fa;
+            font-family: "Segoe UI", sans-serif;
         }
 
+        /* ----------- SIDEBAR ----------- */
         .sidebar {
-            width: 260px;
+            width: 250px;
             height: 100vh;
             position: fixed;
-            left: 0;
-            top: 0;
-            background: rgba(0,0,0,0.75);
-            color: white;
+            background: #1f2937; /* Dark Slate */
             padding: 20px;
+            color: #fff;
+            overflow-y: auto;
+        }
+
+        .sidebar h4 {
+            font-weight: bold;
         }
 
         .sidebar a {
             display: block;
-            padding: 10px 12px;
-            color: #f1f1f1;
-            margin-bottom: 6px;
-            border-radius: 5px;
+            padding: 10px 15px;
+            color: #cbd5e1;
             text-decoration: none;
+            border-radius: 10px;
+            font-size: 15px;
         }
 
         .sidebar a:hover {
-            background: #0d6efd;
+            background: #374151;
+            color: #fff;
         }
 
+        hr {
+            border-color: #4b5563;
+        }
+
+        /* ----------- TOP NAVBAR ----------- */
+        .navbar-custom {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 12px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-brand {
+            font-size: 20px;
+            color: #111827;
+        }
+
+        .navbar-brand img {
+            margin-right: 5px;
+        }
+
+        .nav-link {
+            color: #374151 !important;
+        }
+
+        .nav-link:hover {
+            color: #111827 !important;
+        }
+
+        /* ----------- CONTENT AREA ----------- */
         .content {
-            margin-left: 280px;
+            margin-left: 250px;
             padding: 25px;
         }
 
-        .navbar-custom {
-            background: rgba(255,255,255,0.85);
-            border-radius: 10px;
-            margin-bottom: 20px;
-            padding: 10px 20px;
+        .card-custom {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
         }
 
-        .card-custom {
-            background: rgba(255,255,255,0.85);
-            border-radius: 12px;
+        /* ----------- QUICK LINKS ----------- */
+        .quick-link-card {
+            background: #ffffff;
             padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+            text-align: center;
+            transition: 0.3s;
         }
-    
+
+        .quick-link-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .quick-link-card i {
+            font-size: 26px;
+            margin-bottom: 8px;
+            color: #3b82f6;
+        }
+
+        /* ----------- DARK MODE TOGGLE ----------- */
+        .dark-toggle {
+            cursor: pointer;
+        }
+
+        /* 🌙 Dark Mode */
+.dark-mode {
+    background-color: #1d1f27 !important;
+    color: #f1f1f1 !important;
+}
+
+/* Apply to sidebar & top navbar */
+.dark-mode .sidebar {
+    background: #13141a !important;
+}
+
+.dark-mode .navbar-custom {
+    background: #1f2129 !important;
+}
+
+/* Cards */
+.dark-mode .card-custom {
+    background: #2a2c36 !important;
+    color: white !important;
+}
+
+/* Links */
+.dark-mode a {
+    color: #e5e5e5 !important;
+}
+
+/* Quick Link Cards */
+.dark-mode .quick-link-card {
+    background: #2a2c36 !important;
+    color: #fff !important;
+}
