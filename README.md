@@ -43,17 +43,6 @@ SaaS School Systems
 👨‍💻 Author
 Developed by Ahasan Habib Roxy
 
-yaml
-Copy code
-
----
-
-If you want, I can also:
-- Add **API endpoint documentation**
-- Add **Postman collection**
-- Add **database schema**
-- Or make a **SaaS-ready version description**.
-
 
 
 
